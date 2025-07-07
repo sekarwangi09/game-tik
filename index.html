@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizMaster TIK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Halaman Awal -->
+  <div class="container" id="start-screen">
+    <h1>🎯 game  TIK</h1>
+    <p>Pilih jumlah pemain:</p>
+    <select id="playerCount">
+      <option value="1">1 Pemain (vs Komputer)</option>
+      <option value="2">2 Pemain</option>
+      <option value="3">3 Pemain</option>
+      <option value="4">4 Pemain</option>
+    </select>
+
+    <p>Pilih kategori soal:</p>
+    <select id="category">
+      <option value="dasar">Dasar</option>
+      <option value="internet">Internet</option>
+      <option value="hardware">Hardware</option>
+    </select>
+
+
+    <button onclick="startGame()">Mulai Permainan</button>
+  </div>
+
+  <!-- Halaman Giliran -->
+  <div class="container" id="turn-screen" style="display: none;">
+    <h2 id="next-turn-text">Giliran Pemain 1</h2>
+    <button onclick="startTurn()">Mulai Giliran</button>
+  </div>
+
+  <!-- Halaman Quiz -->
+  <div class="container" id="quiz-screen" style="display: none;">
+    <h2 id="question-number"></h2>
+    <p id="question-text"></p>
+    <div id="choices"></div>
+
+    <div class="bottom-bar">
+      <span id="timer">⏱️ 10</span>
+      <span id="player-turn"></span>
+      <span id="score">Skor: 0</span>
+    </div>
+  </div>
+
+  <!-- Halaman Hasil -->
+  <div class="container" id="result-screen" style="display: none;">
+    <h1>🏁 Hasil Akhir</h1>
+    <div id="scores"></div>
+    <button onclick="resetGame()">Main Lagi</button>
+    <button onclick="clearLeaderboard()">Hapus Skor Leaderboard</button>
+    <h2>📊 Leaderboard</h2>
+    <div id="leaderboard"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</html>
+

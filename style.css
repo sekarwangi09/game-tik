@@ -1,0 +1,89 @@
+/* 🌸 LATAR BELAKANG PINK-PUTIH */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e6); /* full wallpaper pink-putih */
+  color: #5b1a43;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  flex-direction: column;
+}
+
+/* 🌸 KOTAK UTAMA */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2em;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 5px dashed #f9a8d4; /* pita pink */
+}
+
+/* 🎀 TOMBOL */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ec4899;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+/* 🧠 PILIHAN JAWABAN */
+#choices button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9a8d4;
+  color: #4b006e;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#choices button:hover {
+  background-color: #f472b6;
+}
+
+/* 🧮 INFO BAWAH */
+.bottom-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 🧺 DROPDOWN */
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #f472b6;
+  background-color: #fff0f6;
+  color: #7f1d1d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 500px) {
+  .bottom-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
